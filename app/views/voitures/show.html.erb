@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+<%= render partial: 'voiture_view', locals: {voiture:@voiture} %>
+
+<%= link_to 'Edit', edit_voiture_path(@voiture) %> |
+<%= link_to 'Back', voitures_path %>

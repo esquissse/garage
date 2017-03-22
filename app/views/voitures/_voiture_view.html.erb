@@ -1,0 +1,29 @@
+<p>
+  <strong>Immatriculation:</strong>
+  <%= voiture.immatriculation %>
+</p>
+
+<p>
+  <strong>Couleur:</strong>
+  <%= voiture.couleur %>
+</p>
+
+<p>
+  <strong>Modele:</strong>
+  <%= voiture.modele %>
+</p>
+
+<p>
+  <strong>Date mise en service:</strong>
+  <%= voiture.date_mise_en_service %>
+</p>
+
+<p>
+  <strong>Personne:</strong>
+  <%= voiture.personne.try(:nom_complet)  %>
+</p>
+
+<p>
+  <strong>Marque:</strong>
+  <%= link_to voiture.marque.try(:libelle), marque_path(voiture)  %>
+</p>
